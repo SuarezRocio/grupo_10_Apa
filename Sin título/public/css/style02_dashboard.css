@@ -1,0 +1,286 @@
+body {
+    background: #f2f2f2;
+    background-image: url(../images/protruding-squares.svg);
+    background-repeat: repeat;
+    font-family: 'Open Sans', sans-serif;
+    padding: 3%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* --- --- BARRA LATERAL --- --- */
+
+.barra-lateral {
+    background: #262a34;
+    color: #fff;
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+.barra-lateral a {
+    color: #fff;
+}
+
+
+/* --- LOGO --- */
+
+.logo {
+    background: #D63384;
+}
+
+
+/* --- MENU --- */
+
+.barra-lateral .logo .menu a {
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.barra-lateral .menu a:hover {
+    background: #35ae6b;
+}
+
+.barra-lateral .menu a svg {
+    margin-right: 10px;
+}
+
+
+/* --- --- MAIN --- --- */
+
+.main {
+    padding-top: 40px;
+}
+
+.main .columna {
+    padding: 0 40px;
+}
+
+.main .titulo {
+    color: #262a34;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.main .widget {
+    margin-bottom: 40px;
+}
+
+
+/* --- Widget Nueva Entrada --- */
+
+.main .nueva_entrada form input[type="text"],
+.main .nueva_entrada form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
+}
+
+.main .nueva_entrada form textarea {
+    height: 400px;
+    min-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.main .nueva_entrada button {
+    background: #0275d8;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+
+.main .nueva_entrada button:hover {
+    background: #025aa5;
+}
+
+.main .nueva_entrada button svg {
+    margin-right: 10px;
+}
+
+
+/* --- Widget Estadisticas --- */
+
+.main .estadisticas .contenedor {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .2);
+}
+
+.main .estadisticas .caja {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    padding: 40px 20px;
+    flex: 1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main .estadisticas .caja h3 {
+    margin-bottom: 10px;
+    color: #35ae6b;
+}
+
+.main .estadisticas .caja p {
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+.main .estadisticas .caja:first-child {
+    border-right: none;
+}
+
+.main .estadisticas .caja:last-child {
+    border-left: none;
+}
+
+
+/* --- Widget Comentarios --- */
+
+.main .comentarios .contenedor {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .2);
+}
+
+.main .comentarios .comentario {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.main .comentarios .comentario .foto {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.main .comentarios .comentario .foto a {
+    display: inline-block;
+}
+
+.main .comentarios .comentario .foto img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .comentarios .comentario .texto {
+    flex: 1;
+}
+
+.main .comentarios .comentario .texto .texto-comentario {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main .comentarios .comentario .botones button {
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main .comentarios .comentario .botones .aprobar {
+    background: #35ae6b;
+}
+
+.main .comentarios .comentario .botones .eliminar {
+    background: #b74848;
+}
+
+.main .comentarios .comentario .botones .bloquear {
+    color: #acacac;
+}
+
+.main .comentarios .comentario .botones .aprobar:hover {
+    background: #449d44;
+}
+
+.main .comentarios .comentario .botones .eliminar:hover {
+    background: #c9302c;
+}
+
+.main .comentarios .comentario .botones .bloquear:hover {
+    color: #fff;
+    background: #acacac;
+}
+
+
+/* --- MEDIAQUERIES ---  */
+
+
+/* Dispositivo xs */
+
+@media screen and (max-width: 320px) {}
+
+
+/* Dispositivo sm */
+
+@media screen and (max-width: 576px) {
+    .barra-lateral {
+        min-height: auto;
+    }
+}
+
+
+/* Dispositivo md */
+
+@media screen and (max-width: 768px) {
+    .main .comentarios .comentario .botones button {
+        width: 100%;
+    }
+}
+
+
+/* Dispositivo lg */
+
+@media screen and (max-width: 992px) {}
+
+
+/* Dispositivo xl */
+
+@media screen and (max-width: 1200px) {
+    .barra-lateral {
+        min-width: auto;
+    }
+    .barra-lateral .logo {
+        display: none;
+    }
+    .barra-lateral .menu a svg {
+        display: none;
+    }
+    .main .comentarios .comentario .foto {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/* Dispositivo xxl */
+
+@media screen and (max-width: 1400px) {}

@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"polymermallard.box-comment",
+		"ms-ceintl.vscode-language-pack-es",
+		"streetsidesoftware.code-spell-checker-spanish",
+		"dinhani.divider",
+		"stackbreak.comment-divider",
+		"esbenp.prettier-vscode",
+		"hookyqr.beautify",
+		"michelemelluso.code-beautifier",
+		"cssho.vscode-svgviewer",
+		"ysemeniuk.emmet-live",
+		"FallenMax.mithril-emmet"
+	]
+}

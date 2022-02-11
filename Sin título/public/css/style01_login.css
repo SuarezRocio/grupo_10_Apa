@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-01 {
+    background-color: gray;
+    background: url('../images/bg-02.svg');
+    background-repeat: repeat;
+    padding: 0px;
+    margin: 0px
+}
+
+.bg {
+    background: #060122;
+    background-image: url('../images/bg01.png');
+    background-size: cover;
+    align-content: center;
+    vertical-align: center;
+}
+
+
+/*
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                             LOGIN                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+/*/
+
+.col-login {
+    margin: 2px solid gray;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+.text-custom {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.brand-name {
+    color: #FF0099
+}

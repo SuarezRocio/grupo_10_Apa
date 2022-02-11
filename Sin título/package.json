@@ -1,0 +1,24 @@
+{
+    "name": "grupo_10_apa",
+    "version": "1.0.0",
+    "description": "El projecto APA se inicia como una ideia desarollada en el curso de desarollo web full-stack de la escuela **DIGITAL HOUSE** a partir de la supervision del  **docente Jeronimo Sola** donde simulamos un desarollo del web site de una empresa que vende productos o presta servicio al usuario",
+    "main": "src/app.js",
+    "scripts": {
+        "test": "npm run -t"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuarezRocio/grupo_10_Apa.git"
+    },
+    "keywords": [],
+    "author": "botechiaerika + suarezrocio",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SuarezRocio/grupo_10_Apa/issues"
+    },
+    "homepage": "https://github.com/SuarezRocio/grupo_10_Apa#readme",
+    "dependencies": {
+        "express": "^4.17.2",
+        "nodemon": "^2.0.15"
+    }
+}
