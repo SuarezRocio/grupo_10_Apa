@@ -1,5 +1,5 @@
-const express = require('express') /
-    const app = express()
+const express = require('express');
+const app = express()
 let nodemon = nodemon()
 const path = require('path')
 app.use(express.static(public))
@@ -20,5 +20,5 @@ app.listen(3030, function() => {
     })
     app.use(express.static(path.resolve(__dirname, '../public/')));
 
-    console.log("Servidor LEVANTADO");
+    console.log("Servidor LEVANTADO")
 });
