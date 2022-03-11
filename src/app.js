@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 // var cookieParser = require('cookie-parser');
 // var logger = require('morgan');
-const port = process.env.PORT || 3030
+
 
 const mainRouters = require('./routes/mainRoutes.js')
 const productsRouters = require('./routes/productsRoutes.js')
@@ -21,8 +21,9 @@ app.use('/', mainRouters)
 app.use('/productos', productsRouters);
 app.use('/*', (req, res) => { res.render('error404') })
 
-app.listen(port, () => {
-    console.log('server corriendo port 3030')
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Servidor corriendo");
 })
+
 
 module.exports = app;
