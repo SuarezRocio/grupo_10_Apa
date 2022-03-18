@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "El projecto APA se inicia como una ideia desarollada en el curso de desarollo web full-stack de la escuela **DIGITAL HOUSE** a partir de la supervision del  **docente Jeronimo Sola** donde simulamos un desarollo del web site de una empresa que vende productos o presta servicio al usuario",
     "main": "./src/app.js",
+    "scripts": {
+    "start": "nodemon ./app.js"
+},
     "dependencies": {
         "accepts": "^1.3.8",
         "abbrev": "^1.1.1",
