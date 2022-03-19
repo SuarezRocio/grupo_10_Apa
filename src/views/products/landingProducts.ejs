@@ -1,485 +1,491 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- include('../partials/head'); %>
-    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
-    <link rel='stylesheet' href='/stylesheets/style_landingProducts.css' type="text/css" />
-    <!--FONT AWESOME  -->
-    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
-    <title>APA! <%= title ;%> </title>
+        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='/stylesheets/style_landingProducts.css' type="text/css" />
+        <!--FONT AWESOME  -->
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <title>APA!
+            <%= title ;%>
+        </title>
 
 </head>
+
 <body class="bodyPage bg-light">
-<%- include('../partials/navbarTop'); %>
+    <%- include('../partials/navbarTop'); %>
 
-<div class="div2 bg-light">
-    <header class="header w-100 text-center ">
-        <div class="hero bg-light">
-            <div class="px-2 py-2 my-9 text-center">
-            </div>
-            <h1 class="display-2 fw-bold h101"><span class="apa-name">APA!</span>CABA</h1>
-            <p class="herod "> FACILIDAD, VENTAJAS y PLACER ahora en tu celu con APA! app!</p>
-            <div class="row">
-                <div class=" col-12 py-20 mg-20 ">
-            <img class="image-responsive " src="https://live.staticflickr.com/65535/51885269432_5f9573f335_o.png" alt="app apa " height="300px " />
-            <p class="herod mg-3"> </p>
-        </div>
-</header>
-<div class="container bg-light">
-        <div class="row">
+        <div class="div2 bg-light">
+            <header class="header w-100 text-center ">
+                <div class="hero bg-light">
+                    <div class="px-2 py-2 my-9 text-center">
+                    </div>
+                    <h1 class="display-2 fw-bold h101"><span class="apa-name">APA!</span>CABA</h1>
+                    <p class="herod "> FACILIDAD, VENTAJAS y PLACER ahora en tu celu con APA! app!</p>
+                    <div class="row">
+                        <div class=" col-12 py-20 mg-20 ">
+                            <img class="image-responsive " src="https://live.staticflickr.com/65535/51885269432_5f9573f335_o.png" alt="app apa " height="300px " />
+                            <p class="herod mg-3"> </p>
+                        </div>
+            </header>
+            <div class="container bg-light">
+                <div class="row">
 
-            <!-- Card 1 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 2 Front -->
-                    <div class="card front">
-                        <img src=https://live.staticflickr.com/65535/51930776611_573237a898_o.png" class="card-img-top img-fluid">
-                        <div class="card-block" id="divC1front">
-                            <h4 class="card-title">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 2 Front -->
+                            <div class="card front">
+                                <img src=https://live.staticflickr.com/65535/51930776611_573237a898_o.png " class="card-img-top img-fluid ">
+                        <div class="card-block " id="divC1front ">
+                            <h4 class="card-title ">
                                 Comuna <p> <%= comunaID ;%></p>
                             </h4>
-                                <p class="card-text"><%= comunaIncludes%></p>
+                                <p class="card-text "><%= comunaIncludes%></p>
                         </div>
                     </div>
                     <!-- End Card 1 Front -->
 
                     <!-- Card 1 Back -->
-                    <div class="card back">
-                        <div class="card-header">
+                    <div class="card back ">
+                        <div class="card-header ">
                             C.A.B.A.
                         </div>
-                        <div class="card-block">
-                            <h4 class="card-title">COMUNA  <%= comunaID ;%></h4>
-                            <p class="card-text"><%= comunaParaghy ;%>.</p>
+                        <div class="card-block ">
+                            <h4 class="card-title ">COMUNA  <%= comunaID ;%></h4>
+                            <p class="card-text "><%= comunaParaghy ;%>.</p>
                             <a href="/productos/comuna<%=comunaID%>" class="btn btn-primary">APA! MOSTRA</a>
-                        </div>
-                    </div>
-                    <!-- End Card 1 Back -->
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 2 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 2 Front -->
-
-                    <!-- Card 2 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 2 Back -->
-                </div>
-            </div>
-            <!-- End Card 2 -->
-
-            <!-- Card 3 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 3 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 3 Front -->
-
-                    <!-- Card 3 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 3 Back -->
-            <!-- End Card 3 Back -->
-                </div>
-            </div>
-            <!-- Card 4 -->
-
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 4 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 4 Front -->
-
-                    <!-- Card 4 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 4 Back -->
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 5 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 5 Front -->
-
-                    <!-- Card 5 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 5 Back -->
-                </div>
-            </div>
-            <!-- End Card 5 -->
-
-<!--            CARD 6-->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 6 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 6 Front -->
-
-                    <!-- Card 6 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                           C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 6 Back -->
-                </div>
-            </div>
-
-                    <!-- Card 7 Front -->
-
-                    <div class="col-md-4 card-container">
-                        <div class="card-flip">
-                            <!-- Card 7 Front -->
-                            <div class="card front">
-                                <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                                <div class="card-block">
-                                    <h4 class="card-title">Front Card Title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                                </div>
                             </div>
-                            <!-- End Card 7 Front -->
+                        </div>
+                        <!-- End Card 1 Back -->
+                    </div>
+                </div>
 
-                            <!-- Card 7 Back -->
-                            <div class="card back">
-                                <div class="card-header">
-                                    C.A.B.A.
-                                </div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Special title treatment</h4>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 2 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
-                            <!-- End Card 7 Back -->
                         </div>
-                    </div>
-            <!-- Card 8 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 8 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 8 Front -->
+                        <!-- End Card 2 Front -->
 
-                    <!-- Card 8 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
+                        <!-- Card 2 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                        <!-- End Card 2 Back -->
                     </div>
-                    <!-- End Card 8 Back -->
                 </div>
-            </div>
-            <!-- End Card 8 -->
+                <!-- End Card 2 -->
 
-            <!-- Card 9 -->
-
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 9 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <!-- Card 3 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 3 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
+                        <!-- End Card 3 Front -->
+
+                        <!-- Card 3 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 3 Back -->
+                        <!-- End Card 3 Back -->
                     </div>
-                    <!-- End Card 9 Front -->
-
-                    <!-- Card 9 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 9 Back -->
                 </div>
-            </div>
+                <!-- Card 4 -->
 
-            <!-- Card 4 -->
-
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 4 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
                     </div>
-                    <!-- End Card 4 Front -->
-
-                    <!-- Card 4 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 4 Back -->
                 </div>
-            </div>
 
-            <!-- Card 5 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 5 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Card 5 Front -->
+                        <!-- End Card 5 Front -->
 
-                    <!-- Card 5 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                        <!-- End Card 5 Back -->
                     </div>
-                    <!-- End Card 5 Back -->
                 </div>
-            </div>
-            <!-- End Card 5 -->
+                <!-- End Card 5 -->
 
-            <!--            CARD 6-->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 6 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <!--            CARD 6-->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 6 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Card 6 Front -->
+                        <!-- End Card 6 Front -->
 
-                    <!-- Card 6 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
+                        <!-- Card 6 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                        <!-- End Card 6 Back -->
                     </div>
-                    <!-- End Card 6 Back -->
                 </div>
-            </div>
 
+                <!-- Card 7 Front -->
 
-            <!-- Card 4 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 7 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 4 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
+                        <!-- End Card 7 Front -->
+
+                        <!-- Card 7 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 7 Back -->
                     </div>
-                    <!-- End Card 4 Front -->
-
-                    <!-- Card 4 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 4 Back -->
                 </div>
-            </div>
+                <!-- Card 8 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 8 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 8 Front -->
 
-            <!-- Card 5 -->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 5 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <!-- Card 8 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
+                        <!-- End Card 8 Back -->
                     </div>
-                    <!-- End Card 5 Front -->
-
-                    <!-- Card 5 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <!-- End Card 5 Back -->
                 </div>
-            </div>
-            <!-- End Card 5 -->
+                <!-- End Card 8 -->
 
-            <!--            CARD 6-->
-            <div class="col-md-4 card-container">
-                <div class="card-flip">
-                    <!-- Card 6 Front -->
-                    <div class="card front">
-                        <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-                        <div class="card-block">
-                            <h4 class="card-title">Front Card Title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <!-- End Card 6 Front -->
+                <!-- Card 9 -->
 
-                    <!-- Card 6 Back -->
-                    <div class="card back">
-                        <div class="card-header">
-                            C.A.B.A.
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 9 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                        <div class="card-block">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- End Card 9 Front -->
+
+                        <!-- Card 9 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
+                        <!-- End Card 9 Back -->
                     </div>
-                    <!-- End Card 6 Back -->
                 </div>
-            </div>
 
-            <%- include('../partials/footer'); %>
-</div>
-<%- include('../partials/navbarBottom'); %>
+                <!-- Card 4 -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Front -->
+
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Back -->
+                    </div>
+                </div>
+                <!-- End Card 5 -->
+
+                <!--            CARD 6-->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 6 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Front -->
+
+                        <!-- Card 6 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Back -->
+                    </div>
+                </div>
+
+
+                <!-- Card 4 -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Front -->
+
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Back -->
+                    </div>
+                </div>
+                <!-- End Card 5 -->
+
+                <!--            CARD 6-->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 6 Front -->
+                        <div class="card front">
+                            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Front -->
+
+                        <!-- Card 6 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Back -->
+                    </div>
+                </div>
+
+                <%- include('../partials/footer'); %>
+            </div>
+            </div>
+            <%- include('../partials/navbarBottom'); %>
 </body>
+
 </html>

@@ -21,9 +21,7 @@ app.use('/', mainRouters)
 app.use('/productos', productsRouters);
 app.use('/*', (req, res) => { res.render('error404') })
 
-app.listen(process.env.PORT || 3000, function() {
-    console.log("Servidor corriendo");
+app.listen(process.env.PORT || 3044, function() {
+    console.log("Servidor corriendo on PORT 3044");
 })
-
-
 module.exports = app;
