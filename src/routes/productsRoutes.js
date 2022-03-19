@@ -1,10 +1,10 @@
-const productsControllers = require('./../controllers/productsControllers.js')
+const productsRoutes = require('./../controllers/productsControllers.js')
 const express = require('express');
 const router = express.Router();
 
 // ROUTER PARA COLLECCION PRODUCTS
-router.get('/', productsControllers.landingProductos)
-router.get('/detalles', productsControllers.detalleProductos)
+router.get('/', productsRoutes.landingProductos)
+router.get('/detalles', productsRoutes.detalleID)
 module.exports = router
 
 // RUTAS PARAMETRIZADAS

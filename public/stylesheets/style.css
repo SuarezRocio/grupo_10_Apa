@@ -1,153 +1,287 @@
-.bodyPage{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 97vw;
-  height: 100vh;
-  box-sizing: border-box;
+.bodyPage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 97vw;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .div1 {
-  grid-area: 1 / 1 / 2 / 6;
-  height: 90px
+    grid-area: 1 / 1 / 2 / 6;
+    height: 90px
 }
 
 .div2 {
-  grid-area: 2 / 1 / 12 / 6;
-  height: auto;
-  background: url("../images/svg/bg-01.svg");
-  repeat: background-repeat;
+    grid-area: 2 / 1 / 12 / 6;
+    height: auto;
+    background: url("../images/svg/bg-01.svg");
+    repeat: background-repeat;
 }
 
-.div1{
-  background: url("../images/svg/bg-01.svg");
-  repeat: background-repeat;
+.div1 {
+    background: url("../images/svg/bg-01.svg");
+    repeat: background-repeat;
 }
 
 .div3 {
-  grid-area: 12 / 1 / 13 / 6;
-  max-height: 20px;
+    grid-area: 12 / 1 / 13 / 6;
+    height: 40px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
+}
+
+.btn {
+    border-radius: 25px
+}
+
+.new {
+    font-size: 12px
+}
+
+.card {
+    padding: 20px;
+    border: none
+}
+
+.active {
+    background: #f6f7fb !important;
+    border-color: #f6f7fb !important;
+    color: #000 !important;
+    font-size: 12px
+}
+
+.inputs {
+    position: relative
+}
+
+.form-control {
+    text-indent: 15px;
+    border: none;
+    height: 45px;
+    border-radius: 0px;
+    border-bottom: 1px solid #eee
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #eee;
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid blue
+}
+
+.form-control:focus {
+    color: blue
+}
+
+.inputs i {
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    color: #b8b9bc
+}
+
+.star {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    margin-right: 10px;
+    border-radius: 5px
+}
+
+.time-text {
+    font-size: 12px;
+    color: #989898
+}
+
+.dots {
+    height: 7px;
+    width: 7px;
+    background-color: #eee;
+    display: flex;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 7px
+}
+
+.yellow {
+    color: #ffab2e
+}
+
+.content-text-1 {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffe7cc;
+    color: #ffa03a;
+    font-weight: 700
+}
+
+.blue {
+    color: #6ecce6
+}
+
+.content-text-2 {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e2f5fa;
+    color: #6ecce6;
+    font-weight: 700
+}
+
+.dark-blue {
+    color: #572ce8
+}
+
+.content-text-3 {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #572ce86b;
+    color: #572ce8;
+    font-weight: 700;
+    position: fixed;
+    atac
+}
 
 
 /*navbar*/
 
 .menu {
-  margin-top: 0px;
-  height: 80px;
-  border: 2px solid #e70c8f;
-  border-radius: 0 0 15px 15px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  -webkit-border-radius: 0 0 15px 15px;
-  -moz-border-radius: 0 0 15px 15px;
-  -ms-border-radius: 0 0 15px 15px;
-  -o-border-radius: 0 0 15px 15px;
-  margin-bottom: 40px;
-  background-color: rgb(255, 0, 149);
-  padding-right: 4rem;
+    margin-top: 0px;
+    height: 80px;
+    border: 2px solid #e70c8f;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+    margin-bottom: 40px;
+    background-color: rgb(255, 0, 149);
+    padding-right: 4rem;
 }
 
 .dropdown-menu {
-  border: 0px;
-  padding: 0.5em;
-  margin: auto;
-  width: 50% auto;
+    border: 0px;
+    padding: 0.5em;
+    margin: auto;
+    width: 50% auto;
 }
 
 .dropdown-divider {
-  color: #e70c8f;
-  width: 100%;
+    color: #e70c8f;
+    width: 100%;
 }
 
 .apaBrand {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 2.7rem;
-  color: #E70C8F;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #E70C8F;
 }
 
 .apaLink {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.7rem;
-  color: #E70C8F;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #E70C8F;
 }
 
 .nLink {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #060004;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #060004;
 }
 
 .nlink a:link {
-  color: black;
+    color: black;
 }
 
 .nlink a:hover {
-  color: rgb(252, 167, 252);
+    color: rgb(252, 167, 252);
 }
 
 .menu-expand {
-  text-align: margin-top: 1em;
-  padding-bottom: 1rem;
-  margin: 0px solid #E70C8F;
-  border-radius: 15px;
+    text-align: margin-top: 1em;
+    padding-bottom: 1rem;
+    margin: 0px solid #E70C8F;
+    border-radius: 15px;
 }
 
 .menu-expand li:hover {
-  background: rgb(252, 167, 252);
+    background: rgb(252, 167, 252);
 }
 
 .news__link::after {
-  content: "";
-  width: 130%;
-  height: 8remp;
-  position: relative;
-  top: 0;
-  left: 0;
+    content: "";
+    width: 130%;
+    height: 8remp;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .apa-name {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  color: #e70c8f;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #e70c8f;
 }
+
 
 /*navfooter*/
 
-
 .apaBrand-bottom {
-  display: block;
-  color: #E70C8F;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 2.7rem;
+    display: block;
+    color: #E70C8F;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
 }
 
 .bg-custom {
-  background-color: #bd0172;
-  width: 100vw;
-  height: 50px;
-  align-content: center;
+    background-color: #bd0172;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
 }
 
-.bg-custom-02{
-  color: black;
-  background:#AAFFAC;
-  border: 2px dotted black;
-  border-radius: 15px;
+.bg-custom-02 {
+    color: black;
+    background: #AAFFAC;
+    border: 2px dotted black;
+    border-radius: 15px;
 }
 
-bg-02{
-  background: url("../images/svg/bg-02.svg");
-  background-repeat: repeat;
+bg-02 {
+    background: url("../images/svg/bg-02.svg");
+    background-repeat: repeat;
 }
 
-.footer-link{
-  text-decoration: none;
-  color: black;
+.footer-link {
+    text-decoration: none;
+    color: black;
 }

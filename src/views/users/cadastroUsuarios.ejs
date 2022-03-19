@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- include('../partials/head'); %>
-    <link rel='stylesheet' href='./../stylesheets/style.css' type="text/css" />
-    <link rel='stylesheet' href='./../stylesheets/style_cadastroUsuarioEmpresa.css' type="text/css" />
+        <link rel='stylesheet' href='./../stylesheets/style.css' type="text/css" />
+        <li class="nav-item"> <a href="#" class="nav-link d-flex align-items-center" data-abc="true"><span>Nantano M</span><i class='bx bxs-chevron-down'></i></a> </li>
+        <link rel='stylesheet' href='./../stylesheets/style_cadastroUsuarioEmpresa.css' type="text/css" />
 
-    <script src="https://kit.fontawesome.com/0c502158eb.js" crossorigin="anonymous"></script>
-    <title> APA! <%= title %> </title>
+        <script src="https://kit.fontawesome.com/0c502158eb.js" crossorigin="anonymous"></script>
+        <title> APA!
+            <%= title %>
+        </title>
 
 
 </head>
+
 <body class="bodyPage">
-<%- include('../partials/navbarTop');%>
+    <%- include('../partials/navbarTop');%>
 
-<div class="div2">
+        <div class="div2">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 bg-form"></div>
-            <div class="col-12 col-md-6 bg-form">
-                <form class="form-group" action="" method="post">
-                    <div class="elem-grupo">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre y apellido" required>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="nombreUsuario">Nombre Usuario:</label>
-                        <input type="text" name="nombreUsuario" class="placeholder_Custom" placeholder="Usuario" required>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="email"></label>E-MAIL:</label>
-                        <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre@mail.com" required>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="contrasena">CONTRASEÑA:</label>
-                        <input type="password" name="contraseña" class="placeholder_Custom" placeholder="contraseña" required>
-                    </div>
-                    <div class="elem-grupo ">
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Precio">
-                                <label for="Precio">PRECIO</label>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 bg-form"></div>
+                    <div class="col-12 col-md-6 bg-form">
+                        <form class="form-group" action="" method="post">
+                            <div class="elem-grupo">
+                                <label for="nombre">Nombre y Apellido:</label>
+                                <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre y apellido" required>
                             </div>
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Música">
-                                <label for="Música">LOCALIZACION</label>
+                            <div class="elem-grupo">
+                                <label for="nombreUsuario">Nombre Usuario:</label>
+                                <input type="text" name="nombreUsuario" class="placeholder_Custom" placeholder="Usuario" required>
                             </div>
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Música">
-                                <label for="Música">EVALUACION</label>
+                            <div class="elem-grupo">
+                                <label for="email"></label>E-MAIL:</label>
+                                <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre@mail.com" required>
                             </div>
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Música">
-                                <label for="Música">NOMBRE</label>
+                            <div class="elem-grupo">
+                                <label for="contrasena">CONTRASEÑA:</label>
+                                <input type="password" name="contraseña" class="placeholder_Custom" placeholder="contraseña" required>
                             </div>
-                        </div>
+                            <div class="elem-grupo ">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Precio">
+                                        <label for="Precio">PRECIO</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Música">
+                                        <label for="Música">LOCALIZACION</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Música">
+                                        <label for="Música">EVALUACION</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Música">
+                                        <label for="Música">NOMBRE</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="mensaje">Comentarios</label>
+                                <textarea class="textarea mensaje" name="usuario_mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                            </div>
+                            <div>
+                                <button class="submit" type="submit">ENVIAR  <i class="bi bi-send"></i></button>
+                                <button class="reset" type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="elem-grupo">
-                        <label for="mensaje">Comentarios</label>
-                        <textarea class="textarea mensaje" name="usuario_mensaje" id="mensaje" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div>
-                        <button class="submit" type="submit">ENVIAR  <i class="bi bi-send"></i></button>
-                        <button class="reset" type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
-                    </div>
-                </form>
+                </div>
+
+
             </div>
-        </div>
 
-
-</div>
-
-<%- include('../partials/navbarBottom'); %>
+            <%- include('../partials/navbarBottom'); %>
 </body>
+
 </html>

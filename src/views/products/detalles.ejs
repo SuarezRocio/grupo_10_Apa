@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- include('../partials/head'); %>
-    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
-    <link rel='stylesheet' href='/stylesheets/style_detalles.css' type="text/css" />
-    <!--FONT AWESOME  -->
-    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='/stylesheets/style_detalles.css' type="text/css" />
+        <!--FONT AWESOME  -->
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
 
 
 </head>
-<body class="bodyPage bg-light">
-<%- include('../partials/navbarTop'); %>
-<body class="bodyPage">
-<div class="div1">
-    <%- include('./../partials/navbarTop') ;%>
-    <div class="div2 rounded bg-light ">
-        <div class="container-fluid rounded">
-            <div class="row">
-                <!--*********************LADO IZQUIERDO*******************************-->
-                <div class="col-md-12 col-lg-8 mx-auto main_cart mb-lg-0 mb-5 bg-light">
-                    <div class="card-p-4 bg-light">
-                        <div class="row mt-5 gx-3">
-                            <div class="py-4 font-weight-bold">
-                                <h2 class="py-4  font-weight-bold">Items del Carrito</h2>
-                            </div>
-                            <!--**************************DIV IMG PARA CART*******************-->
-                            <div class="row">
-                                <div class="col-md-5 col-11 mx-auto bg-light rounded justify-content-center rounded align-items-center shadow product_img">
-                                    <img src="https://live.staticflickr.com/65535/51925353464_b8d92e0872_o.png" alt="img-cart" class="img-fluid rounded"/>
-                                </div>
-                                <!--**************************DIV PARA DETALLES DEL PRODUCTO*******************-->
-                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
-                                    <div class="row">
-                                        <!--**************************NOMBRE DEL PRODUCTO*******************-->
-                                        <div class="col-6 cart-title">
-                                            <h2 class="mb-4 product_name text-muted"><strong><p> SUITE </p></strong></h2>
-                                            <p class="descripcion">"Combo con 1 champagne a precio promocional"</p>
-                                            <p class="valor"><strong>Valor:</strong>2300-3400</p>
-                                            <p class="ubicacion">
-                                            <p class="ubicacion"><strong>Zona: CABALLITO</strong><br></p><strong>Acceso:</strong> Querandies 4486
-                                            <strong>Garage:</strong> Rio de Janeiro 271
-                                            </p>
-                                        </div>
-                                        <!--***********AGREGAR-SACAR PRODUCTO*******************-->
 
-                                        <!--***********AGREGAR-SACAR PRECIO******************-->
-                                        <div class="row">
-                                            <div class="col-8 d-flex justify-content-between remove_item">
-                                                <p><i class="bi bi-trash-fill text-danger"></i>DELETAR Item</p>
-                                                <p><i class="bi bi-bag-heart-fill text-success"></i>AGREGAR Item</p>
-                                            </div>
+<body class="bodyPage bg-light">
+    <%- include('../partials/navbarTop'); %>
+
+        <body class="bodyPage">
+            <div class="div1">
+                <%- include('./../partials/navbarTop') ;%>
+            </div>
+            <div class="div2 rounded bg-light ">
+                <div class="container-fluid rounded">
+                    <div class="row">
+                        <!--*********************LADO IZQUIERDO*******************************-->
+                        <div class="col-md-12 col-lg-8 mx-auto main_cart mb-lg-0 mb-5 bg-light">
+                            <div class="card-p-4 bg-light">
+                                <div class="row mt-5 gx-3">
+                                    <div class="py-4 font-weight-bold">
+                                        <h2 class="py-4  font-weight-bold">Items del Carrito</h2>
+                                    </div>
+                                    <!--**************************DIV IMG PARA CART*******************-->
+                                    <div class="row">
+                                        <div class="col-md-5 col-11 mx-auto bg-light rounded justify-content-center rounded align-items-center shadow product_img">
+                                            <img src="https://live.staticflickr.com/65535/51925353464_b8d92e0872_o.png" alt="img-cart" class="img-fluid rounded" />
                                         </div>
-                                        <div class="col-4 d-flex justify-content-end price_money">
-                                            <h3>$<span id="item_value">00.00</span></h3>
+                                        <!--**************************DIV PARA DETALLES DEL PRODUCTO*******************-->
+                                        <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                            <div class="row">
+                                                <!--**************************NOMBRE DEL PRODUCTO*******************-->
+                                                <div class="col-6 cart-title">
+                                                    <h2 class="mb-4 product_name text-muted"><strong><p> SUITE </p></strong></h2>
+                                                    <p class="descripcion">"Combo con 1 champagne a precio promocional"</p>
+                                                    <p class="valor"><strong>Valor:</strong>2300-3400</p>
+                                                    <p class="ubicacion">
+                                                        <p class="ubicacion"><strong>Zona: CABALLITO</strong><br></p><strong>Acceso:</strong> Querandies 4486
+                                                        <strong>Garage:</strong> Rio de Janeiro 271
+                                                    </p>
+                                                </div>
+                                                <!--***********AGREGAR-SACAR PRODUCTO*******************-->
+
+                                                <!--***********AGREGAR-SACAR PRECIO******************-->
+                                                <div class="row">
+                                                    <div class="col-8 d-flex justify-content-between remove_item">
+                                                        <p><i class="bi bi-trash-fill text-danger"></i>DELETAR Item</p>
+                                                        <p><i class="bi bi-bag-heart-fill text-success"></i>AGREGAR Item</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end price_money">
+                                                    <h3>$<span id="item_value">00.00</span></h3>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!--***********2 item****************-->
+            <diiv class="
+" "div3">
+                <%- include('../partials/navbarBottom'); %>
+                    </div>
+        </body>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--***********2 item****************-->
-
-        <%- include('../partials/navbarBottom'); %>
-
-</body>
 </html>
